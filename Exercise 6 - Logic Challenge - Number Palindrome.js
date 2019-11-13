@@ -1,5 +1,5 @@
 function angkaPalindrome(num) {
-  for(var i = 1 ; i<10 ; i++){
+  for(var i = 1 ; i<num ; i++){
     var temp = num + i
     var str = temp + '';
     var strbalik = str.split("").reverse().join("");
@@ -15,4 +15,7 @@ function angkaPalindrome(num) {
   console.log(angkaPalindrome(117)); // 121
   console.log(angkaPalindrome(175)); // 181
   console.log(angkaPalindrome(1000)); // 1001
+
+  //Additional TEST CASE (From Bang Yusuf)
+  console.log(angkaPalindrome(12)); // 22
 
