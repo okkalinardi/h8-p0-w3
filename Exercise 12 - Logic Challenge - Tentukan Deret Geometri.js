@@ -1,17 +1,17 @@
 function tentukanDeretGeometri(arr) {
   var a = 0;
   var b = 0;
-  for(i=0 ; i<arr.length ; i++){
-    for(j=0 ; j<(arr.length-1)-i; j++)
-    if(i!=j){
-    a = arr[i]/arr[j]
-    b = arr[i+1]/arr[j+1]
-    }
+  for (i = 0; i < arr.length; i++) {
+    for (j = 0; j < (arr.length - 1) - i; j++)
+      if (i != j) {
+        a = arr[i] / arr[j]
+        b = arr[i + 1] / arr[j + 1]
+      }
   }
-      if(a===b){
-      return true;
-  }else{
-      return false;
+  if (a === b) {
+    return true;
+  } else {
+    return false;
   }
 }
 
